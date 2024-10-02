@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>fundacion abuelitos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="fundacionForm">
+      <h3>fundacion abuelitos</h3>
+      <table id="fundacionForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>cantidad bolivares</th>
+          <th>Cantidad dólares</th>
+          <th>total bolivares</th>
+          <th>total dolares</th>
+        </tr>
+      </table>
+      <h5>total recaudado en Bs.<span id="fundacionForm_lbldevolvertotalbs">?</span></h5>
+      <h5>total recaudado en $<span id="fundacionForm_lbldevolvertotald">?</span></h5> 
+      <h5>mayor donador: <span id="fundacionForm_lbldevolvermayor">?</span>%</h5>
+      <button id="fundacionForm_btAgregar">Agregar donantes</button>
+    </section>
+
+    <section id="donantesForm">
+      <h3>Datos del donante</h3>
+      <input type="text" id="donantesForm_inNombre" placeholder="Nombre"></input>
+      <input type="text" id="donantesForm_incantd" placeholder="Cantd"></input>
+      <input type="text" id="donantesForm_incantbs"  placeholder="Cantbs"></input>
+    
+      <button id="donantesForm_btaceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
